@@ -77,9 +77,6 @@ body {
         text-decoration: none;/* Remove sublinhado */
         padding: 7px;
         
-        
-        
-        
     }
     .container1 > h2{
         background-color: var(--co1);
@@ -87,6 +84,7 @@ body {
         margin-right: -15px;
         box-shadow: 0px 0px 3px rgba(71, 71, 71, 0.308);
     }
+
     /* Estilo base para todos os tamanhos de tela */
     .container1 > h2, .container1 > h3 {
         font-family: "Oswald", sans-serif;
@@ -311,9 +309,6 @@ body {
         /* Estilo dos itens de navegação ao passar o mouse */
         nav ul li a:hover {
             font-weight: bold;
-            /*
-            background-image: linear-gradient(to left, var(--co2), var(--co2));
-            */
             background-color: var(--co3);
             border-radius: 5px;
             
