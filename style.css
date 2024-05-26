@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/*paleta de cores */
+:root{
+    --co0: #ffffff; 
+    --co1: #eeede8; 
+    --co2: #36dd7c;  
+    --co3: #25a058; 
+    --co4: #30302f; 
+    --co5: #363636;
+    --co6: #346139; 
+    --co7: #384f61;
+    --co8: #1e2b36;
+    --co9: #eeeef1;
+    --co10:#c6d2db;   
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--co1);
+    }
+    #hero {
+        background-image: url('imagens/ceu.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh; 
+    }
+
+    .container {
+        
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        
+        
+        
+                
+    }
+    .centro{
+        font-size:2em;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    header {
+        background-image: linear-gradient(to top, var(--co2), var(--co3));
+        color: var(--co0); /* Texto branco */
+        padding: 20px 0;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.541);
+    }
+
+    header h1 {
+        margin: 0;
+        
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+        
+    }
+
+    nav ul li a {
+        color: var(--co0);
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 5px;
+        
+        
+    }
+    nav ul li a:hover{
+        border:solid 2px var(--co3);
+        padding: 5px;
+        
+    
+        
+        
+    }
+    .container1 > h2 , h3{
+        
+        padding-left: 20px;
+        padding-right: 20px;
+        color: var(--co6);
+        
+    }
+    
+    .container1 p{
+        color: var(--co4);
+        text-indent: 25px;
+        
+    }
+
+    #hero {
+        color: var(--co0);
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    #hero h2 {
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background-color: var(--co3);
+        color: var(--co1);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.541);
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+    .cta-button:hover {
+        background-color: var(--co2);
+    }
+    .container1{
+        width: 90%;
+        max-width: 700px; /* Define a largura máxima do bloco de texto */
+        margin: 0 auto; /* Centraliza o bloco de texto */
+        height:auto;
+        min-width: 300px;
+        text-align: justify;
+        background-color: var(--co0);
+        padding: 15px;
+        padding-bottom: 150px;
+        box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.233);
+        border-radius: 10px;
+        margin-top: 10px;
+        
+
+    }
+    .video1{
+        border-radius: 0%;
+        padding: 15px; 
+        margin-left:-15px;
+        margin-right:-15px;
+        position: relative;
+        padding-bottom:58% ;
+        background-color: var(--co1);
+        
+        
+    }
+    .video1 > iframe{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.534) ;
+        position: absolute;
+        top:5% ;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    
+    }
+    
+    .img1{
+        width: 100%;
+    }
+    .mais{
+        background-color: var(--co1);
+        padding: 15px 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 9px rgba(71, 71, 71, 0.308) ;
+        max-width: 500px;
+        margin: auto;
+        
+
+    }
+    .mais ,a{
+        text-align: center;
+    }
+    .mais > p{
+        text-align: justify;
+    }
+    .subt{
+        
+        background-color: var(--co1);
+        padding: 10px;
+        box-shadow: 0px 0px 3px rgba(71, 71, 71, 0.308) ;
+    }
+    footer {
+        background-image: linear-gradient(to top, var(--co8), var(--co7));
+        color: var(--co0);
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    footer ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    footer ul li a {
+        color: var(--co0);
+        text-decoration: none;
+    }
+
+    /*testes
+    
+    ul {
+        
+        display: none;
+    }
+    */
+    
+    @media only screen and (max-width: 700px){
+        .container1{
+            padding: 10px 25px;
+            min-width: 200px;
+            
+        }
+        nav{
+            display: none;
+            /*
+            top: 47px;
+            */
+        }
+        .menu{
+            position: relative;
+            top: 15px;
+            width:35px;
+
+            display: block;
+        } 
+        nav ul {
+            display: none;
+            width: 100%;
+            text-align: left;
+            height: 100%
+        }
+        nav:hover ul {
+            display: block;
+            border-top: solid 2px var(--co2);
+            padding-bottom: 5px;
+            margin-top: 5px;
+            
+        }
+        nav ul li {
+            display: block;
+            margin: 0;
+            padding: 5px;
+        }
+        nav ul li a {
+            display: block;
+            color: var(--co0);
+            font-size: 1.4em;
+            
+        }
+        nav ul li a:hover {
+            font-weight: bold;
+            background-image: linear-gradient(to left, var(--co2), var(--co2));
+            border-radius: 5px;
+            
+           
+            
+        }
+        /*alterando caracteristicas do menu*/
+        nav{
+            display: inline;
+            text-align: left;
+            
+            
+            
+        }
+        :hover >.menu{
+            display: none;
+        }
+        
+        
+    }
+
+
+    /*estilo para telas de a partir de 701px*/
+
+    @media only screen and (min-width: 701px) {
+        /* Oculta os links diretos dentro do elemento com a classe 'opcoes' */
+        .opcoes > a {
+            display: none;
+            
+        }
+        .menu{
+            display: none;
+        }
+       
+        /* Oculta as imagens dentro de listas não ordenadas */
+        
+        /* Exibe as listas não ordenadas dentro do elemento com a classe 'opcoes' */
+        nav ul{
+            display: block;
+            
+        }
+        /* Define um estilo de borda para todos os elementos 'a' (links) */
+        
+    }
+
+
+    
