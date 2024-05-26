@@ -53,6 +53,8 @@ body {
     header h1 {
         margin: 0;
         font-family: "Open Sans", sans-serif;
+
+        
     }
 
     nav ul {
@@ -84,6 +86,14 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         color: var(--co6);
+
+        line-height: 1.6;
+        margin-bottom: 1.2em; /* Espaçamento entre parágrafos */
+        margin: 0;
+        padding: 0;
+        word-spacing: 0.05em;
+        letter-spacing: 0.02em;
+        
         
     }
     
@@ -91,7 +101,14 @@ body {
         color: var(--co4);
         text-indent: 25px;
         font-family: "Open Sans", sans-serif;
-        
+
+        text-indent: 1.5em;
+        line-height: 1.6;
+        margin-bottom: 1.2em; /* Espaçamento entre parágrafos */
+        margin: 0;
+        padding: 0;
+        word-spacing: 0.05em;
+        letter-spacing: 0.02em;
     }
 
     #hero {
