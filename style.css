@@ -16,10 +16,11 @@
 
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--co1);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--co1);
+        overflow-x: hidden; /* Adiciona overflow-x: hidden para evitar rolagem horizontal */
     }
     #hero {
         background-image: url('imagens/ceu.jpg');
