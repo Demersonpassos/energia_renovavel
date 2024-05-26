@@ -121,7 +121,7 @@ body {
 
 @media (max-width: 480px) {
     .container1 > h2, .container1 > h3 {
-        font-size: 1.2em;
+        font-size: 1.5em;
         padding: 0 2%;
     }
 
