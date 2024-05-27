@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 /* Definição das variáveis de cor */
 :root{
@@ -87,7 +87,7 @@ body {
 
     /* Estilo base para todos os tamanhos de tela */
     .container1 > h2, .container1 > h3 {
-        font-family: "Oswald", sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-size: 1.5em;
         font-style: normal;
         color: var(--co6);
@@ -283,13 +283,12 @@ body {
             display: none;
             width: 100%;
             text-align: left;
-            padding-top: 40px;
+            padding-top: 30px;
             
         }
         /* Mostra a lista de itens de navegação ao passar o mouse na barra de navegação */
         nav:hover ul {
             display: block;
-            border-top: solid 2px var(--co2);
             padding-bottom: 5px;
             margin-top: 5px;
             
@@ -305,7 +304,7 @@ body {
         nav ul li a {
             display: block;
             color: var(--co0);
-            font-size: 1.4em;
+            font-size: 1.3em;
             text-align: left;
             border-bottom: solid 2px var(--co3);
             
@@ -330,6 +329,10 @@ body {
         /* Esconde o ícone do menu ao passar o mouse */
         :hover >.menu{
             display: none;
+        }
+        h1{
+            padding-bottom: 5px;
+            border-bottom: solid 2px var(--co2);
         }
         
         
